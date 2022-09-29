@@ -41,7 +41,7 @@ hr {
 }
 
 body.dark {
-  background-image: url(../images/bg-desktop-dark.jpg);
+  background-image: url(./images/bg-desktop-dark.jpg);
   background-color: hsl(235, 21%, 11%);
 }
 
@@ -110,7 +110,7 @@ body.dark {
 
 body {
 
-  background-image: url(../images/bg-desktop-light.jpg);
+  background-image: url(./images/bg-desktop-light.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100% auto;
