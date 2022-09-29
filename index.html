@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="../image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="./index.js" type="module" defer></script>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Todo app</title>
+
+</head>
+
+<body>
+  <div class="cashier">
+    <header>
+      <h1>TODO</h1>
+      <button class="ligth"><img src="./images/icon-moon.svg" alt=""></button>
+      <button class="dark hide"><img src="./images/icon-sun.svg" alt=""></button>
+    </header>
+    <main>
+      <form class="form">
+        <ul class="createTodo">
+          <li>
+            <input type="checkbox" name="todoC" id="items">
+            <input id="objective" type="text" placeholder="Create new todo...">
+          </li>
+        </ul>
+      </form>
+      <div id="list-todo">
+        <ul id="lista-li">
+        </ul>
+        <table>
+          <thead>
+            <tr class="trr">
+              <th><span>5&nbsp;</span>items left</th>
+              <th><button class="all onfocus">All</button></th>
+              <th><button class="active">Active</button></th>
+              <th><button class="completed">Completed</button></th>
+              <th><button class="clear">Clear Completed</button></th>
+            </tr>
+          </thead>
+        </table>
+        <div class="two">
+          <p><span>5</span> items left</p>
+          <button class="clearT">Clear Completed</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div class="three">
+    <button class="allT onfocus">All</button>
+    <button class="activeT">Active</button>
+    <button class="completedT">Completed</button>
+  </div>
+
+  <div class="attribution"> 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.linkedin.com/in/filipe-tielson-developer/">Filipe Tielson</a>.
+  </div>
+</body>
+
+</html>

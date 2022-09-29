@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Mobile: 37.5rem;
+  --Desktop: 144.0rem;
+
+  /* Primary */
+  --Bright-Blue: hsl(220, 98%, 61%);
+  --Check-Background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+
+  /* Light Theme */
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
+  --Light-Grayish-Blue: hsl(233, 11%, 84%);
+  --Dark-Grayish-Blue: hsl(236, 9%, 61%);
+  --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
+
+  /* Dark Theme */
+  --Very-Dark-Blue: hsl(235, 21%, 11%);
+  --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+  --Light-Grayish-Blue: hsl(234, 39%, 85%);
+  --Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
+  --Dark-Grayis-Blue: hsl(234, 11%, 52%);
+  --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+  --Very-Dark-Grayish-Blu: hsl(237, 14%, 26%);
+
+
+
+  /* Body Copy */
+  font-size: 62.5%;
+}
+
+
+
+hr {
+  border-color: var(--Very-Light-Gray);
+}
+
+body.dark {
+  background-image: url(../images/bg-desktop-dark.jpg);
+  background-color: hsl(235, 21%, 11%);
+}
+
+.dark label {
+  color: hsl(236, 33%, 92%);
+}
+
+.dark button:hover {
+  color: hsl(236, 33%, 92%);
+}
+
+.dark .three {
+  background-color: hsl(237, 14%, 26%);
+}
+
+.dark header {
+  color: var(--Very-Light-Gray);
+}
+
+.dark #list-todo {
+  background-color: hsl(237, 14%, 26%);
+}
+
+.dark .createTodo li {
+  background-color: hsl(237, 14%, 26%);
+  color: hsl(234, 39%, 85%);
+}
+
+.dark ul li {
+  border-bottom: .1rem solid hsl(231, 4%, 31%);
+}
+
+.dark .dark {
+  background: none;
+}
+
+.dark button {
+  background: hsl(237, 14%, 26%);
+}
+
+.dark input {
+
+  background: hsl(237, 14%, 26%);
+  color: hsl(234, 39%, 85%);
+}
+
+.dark ul li #items {
+  appearance: none;
+
+  border: .1rem solid hsl(231, 4%, 38%);
+}
+
+.dark #remove {
+  background: hsl(237, 14%, 26%);
+}
+
+.dark label {
+  color: hsl(234, 39%, 85%);
+}
+
+.dark .attribution {
+  color: hsl(234, 39%, 85%);
+}
+
+/* Light Theme */
+
+body {
+
+  background-image: url(../images/bg-desktop-light.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: var(--Very-Light-Grayish-Blue);
+  height: 100vh;
+  font-size: 1.6rem;
+}
+
+.hide {
+  display: none;
+}
+
+body * {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.cashier {
+  max-width: 54.5rem;
+  margin: 2rem auto 10rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5.0rem;
+  color: var(--Very-Light-Gray);
+}
+
+header button {
+  background: none;
+}
+
+header img {
+  min-height: 2.0rem;
+  width: auto;
+  margin-top: .1rem;
+}
+
+header h1 {
+  margin-top: .6rem;
+  font-weight: 700;
+}
+
+.createTodo li {
+  background-color: var(--Very-Light-Gray);
+  border-radius: 1.0rem;
+  margin-bottom: 2.0rem;
+  color: hsl(236, 9%, 61%);
+  font-weight: 400;
+}
+
+#ok {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 2rem;
+  background: none;
+}
+
+
+#list-todo {
+  background-color: var(--Very-Light-Gray);
+  border-radius: 1.0rem;
+  color: var(--Very-Dark-Grayish-Blue);
+}
+
+ul {
+  list-style: none;
+}
+
+ul.createTodo li:first-child {
+  border-bottom: none;
+}
+
+ul li {
+  padding: 1rem 2rem;
+  gap: 2.0rem;
+  display: grid;
+  grid-template-columns: 2rem 38rem 2rem;
+  border-bottom: .1rem solid hsl(237, 14%, 26%);
+  /* border: 1rem solid var(--Light-Grayish-Blue); */
+  align-items: center;
+
+}
+
+button {
+  background-color: var(--Very-Light-Gray);
+  border: none;
+}
+
+button#remove img {
+  max-width: 1.0rem;
+}
+
+div input#createdtodo {
+  padding: 1.0rem;
+  width: 100%;
+  border-radius: 1.0rem;
+  border: none;
+  margin-bottom: 2.0rem;
+}
+
+input {
+  border: 2.0rem;
+}
+
+.clean-table {
+  background-image: url(https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_960_720.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  height: 40rem;
+}
+
+#items {
+  appearance: none;
+  width: 2rem;
+  height: 2rem;
+
+  border: .1rem solid hsl(237, 14%, 26%);
+  border-radius: 2rem;
+}
+
+#items:checked {
+  background: linear-gradient(rgb(157, 178, 223), rgb(174, 104, 236));
+  ;
+}
+
+table thead {
+  font-size: 1.0rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.trr {
+  display: flex;
+}
+
+button {
+  padding: 1.5rem;
+  cursor: pointer;
+  color: var(--Dark-Grayish-Blue);
+}
+
+button:hover {
+  color: var(--Very-Dark-Grayish-Blue);
+}
+
+th:nth-child(1) {
+  color: var(--Dark-Grayish-Blue);
+  font-size: 1.2rem;
+  margin-left: 10px;
+  margin-right: 7rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.trr th:nth-child(4) {
+  margin-right: 5rem;
+}
+
+.two {
+  display: none;
+}
+
+.three {
+  display: none;
+}
+
+main ul li input {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+footer {
+  color: var(--Dark-Grayish-Blue);
+}
+
+.onfocus {
+  color: #1E80EF;
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media (max-width: 600px) {
+  body {
+    min-width: 37rem;
+
+    background-size: 100%;
+
+  }
+
+  .cashier {
+    max-width: 50rem;
+    margin: 2rem auto;
+  }
+
+  ul li input {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+  ul li {
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: 2rem 36rem 2rem;
+    align-items: center;
+  }
+
+  main {
+    width: 50rem;
+
+  }
+
+  .trr {
+    display: none;
+  }
+
+  .two {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .three {
+    width: 50rem;
+    display: flex;
+    background-color: var(--Very-Light-Gray);
+    border-radius: 1rem;
+    color: var(--Very-Dark-Grayish-Blue);
+    max-width: 50rem;
+    justify-content: center;
+    margin: 2rem auto;
+  }
+
+  p {
+    color: var(--Dark-Grayish-Blue);
+  }
+}
+
+@media (max-width: 528px) {
+  main {
+    width: 37rem;
+    margin: auto;
+  }
+
+  header {
+    width: 37rem;
+    display: flex;
+    margin: 0 auto 3rem;
+    flex-direction: row;
+  }
+
+  ul li {
+    grid-template-columns: 2rem 24rem 2rem;
+  }
+
+  .three {
+    width: 37rem;
+  }
+}
+
+@media (max-width: 400px) {
+  main {
+    width: 35rem;
+    margin: auto;
+  }
+
+  header {
+    width: 35rem;
+    display: flex;
+    margin: 0 auto 3rem;
+    flex-direction: row;
+  }
+
+  ul li {
+    grid-template-columns: 2rem 22rem 2rem;
+  }
+
+  .three {
+    width: 35rem;
+  }
+}
