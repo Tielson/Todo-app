@@ -34,7 +34,7 @@
 
 - Todo app challenge do site Frontend Mentor.
 
-<img src="https://imgur.com/kU2kwsY"/>
+<img src="https://i.imgur.com/kU2kwsY.jpg"/>
 
 - Conhecimentos utilizados para fazer a parte logica do codigo:
 
